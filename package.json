@@ -6,16 +6,7 @@
     "lint": "eslint src",
     "start": "node server.js"
   },
-  "repository": "https://github.com/tabasca/react-simple-boilerplate.git",
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "reload",
-    "live",
-    "edit",
-    "webpack"
-  ],
+  "repository": "https://github.com/tabasca/test_route_app.git",
   "author": "Kate <katu--shka@mail.ru>",
   "license": "MIT",
   "devDependencies": {
