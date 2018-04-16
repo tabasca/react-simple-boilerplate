@@ -1,12 +1,12 @@
 {
-  "name": "react-simple-boilerplate",
+  "name": "react-route-app",
   "version": "1.0.0",
-  "description": "Simple and lightweight Boilerplate for ReactJS projects",
+  "description": "test task",
   "scripts": {
     "lint": "eslint src",
     "start": "node server.js"
   },
-  "repository": "https://github.com/noahlotzer/react-simple-boilerplate.git",
+  "repository": "https://github.com/tabasca/react-simple-boilerplate.git",
   "keywords": [
     "react",
     "reactjs",
@@ -16,15 +16,12 @@
     "edit",
     "webpack"
   ],
-  "author": "Noah-Jerome Lotzer <noah.lotzer@gmail.com>",
+  "author": "Kate <katu--shka@mail.ru>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/noahlotzer/react-simple-boilerplate/issues"
-  },
-  "homepage": "https://github.com/noahlotzer/react-simple-boilerplate",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
@@ -40,6 +37,8 @@
   "dependencies": {
     "babel-loader": "^7.0.0",
     "react": "^15.5.4",
+    "react-dnd": "^2.6.0",
+    "react-dnd-html5-backend": "^2.6.0",
     "react-dom": "^15.5.4"
   },
   "main": "server.js"
