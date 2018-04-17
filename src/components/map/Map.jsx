@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
-import { findDOMNode } from 'react-dom';
-import { common } from '../../common/common';
+import React, {Component} from 'react'
+import { findDOMNode } from 'react-dom'
+import { common } from '../../common/common'
 
-import Utils from '../../common/utils';
+import Utils from '../../common/utils'
 
 export default class Map extends Component {
-	constructor(props) {
-		super(props);
-
-	}
-
 	componentDidMount() {
 		window.loadMap = this.loadMap;
 		Utils.loadJS(`https://maps.googleapis.com/maps/api/js?key=${common.GOOGLE_API_KEY}&libraries=places&callback=loadMap`);

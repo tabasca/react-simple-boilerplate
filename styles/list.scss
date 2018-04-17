@@ -8,7 +8,7 @@
 	&__item {
 		display: block;
 		position: relative;
-		padding: 15px 0 15px 45px;
+		padding: 15px 45px;
 		border-top: 1px dashed #fff;
 		order: 4;
 		cursor: pointer;
@@ -22,9 +22,6 @@
 		&:hover {
 			background: rgba(255, 255, 255, 0.2);
 		}
-	}
-	&__text {
-
 	}
 	&__del {
 		top: 8px;

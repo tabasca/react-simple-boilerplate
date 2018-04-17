@@ -1,17 +1,12 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import { DragDropContext } from 'react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
-
 
 import RouteItem from './RouteItem'
 
 @DragDropContext(HTML5Backend)
-export default class List extends Component {
-	constructor(props) {
-		super(props);
-
-	}
-
+class List extends Component {
 	render() {
 		let list;
 
@@ -47,4 +42,12 @@ export default class List extends Component {
 		);
 	}
 }
+
+List.propTypes = {
+	waypoints: PropTypes.array.isRequired,
+	removeWaypoint: PropTypes.func.isRequired,
+	moveWaypoint: PropTypes.func.isRequired
+};
+
+export default List;
 

@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
-import List from './components/list/List.jsx';
-import Map from './components/map/Map.jsx';
+import List from './components/list/List.jsx'
+import Map from './components/map/Map.jsx'
 import TextInput from './components/TextInput'
 
 import Utils from './common/utils'
@@ -238,9 +238,8 @@ export default class App extends Component {
 				...state,
 				waypoints: state.waypoints.concat(newWaypoint)
 			}), () => {
-				let waypointPosition = this.state.waypoints.indexOf(newWaypoint);
 				newWaypoint.marker.addListener('dragend', () => {
-					this.updateCoordinates(this.state.waypoints[waypointPosition])
+					this.updateCoordinates(newWaypoint)
 				});
 
 				newWaypoint.marker.addListener('click', () => {

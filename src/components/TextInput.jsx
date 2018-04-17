@@ -1,7 +1,8 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import { common } from '../common/common';
-import Utils from '../common/utils';
+import { common } from '../common/common'
+import Utils from '../common/utils'
 
 class TextInput extends Component {
 	constructor(props) {
@@ -79,7 +80,7 @@ TextInput.propTypes = {
 	hint: PropTypes.string,
 	onKeyPress: PropTypes.func.isRequired,
 	placeholder: PropTypes.string,
-	map: PropTypes.object
+	map: PropTypes.object.isRequired
 };
 
 export default TextInput;
