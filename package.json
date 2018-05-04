@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint src",
     "start": "node server.js",
-    "test": "jest"
+    "test": "mocha --compilers js:babel-core/register src/__tests__/**/*.js --require ./src/__tests__/setup_jsdom.js -R nyan"
   },
   "repository": "https://github.com/tabasca/test_route_app.git",
   "author": "Kate <katu--shka@mail.ru>",
@@ -20,12 +20,18 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^3.19.0",
     "eslint-plugin-react": "^6.10.3",
-    "jest": "^22.4.3",
+    "expect.js": "^0.3.1",
+    "jsdom": "^11.8.0",
+    "mocha": "^5.1.0",
     "node-sass": "^4.5.2",
-    "react-test-renderer": "^16.3.2",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dnd-test-backend": "^2.6.0",
     "sass-loader": "^6.0.3",
+    "sinon": "^4.5.0",
     "style-loader": "^0.16.1",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.4"
@@ -34,10 +40,10 @@
     "babel-loader": "^7.0.0",
     "es6-object-assign": "^1.1.0",
     "prop-types": "^15.6.1",
-    "react": "^15.5.4",
+    "react": "^16.3.2",
     "react-dnd": "^2.6.0",
     "react-dnd-html5-backend": "^2.6.0",
-    "react-dom": "^15.5.4"
+    "react-dom": "^16.3.2"
   },
   "main": "server.js"
 }

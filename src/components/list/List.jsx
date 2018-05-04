@@ -5,7 +5,6 @@ import HTML5Backend from 'react-dnd-html5-backend'
 
 import RouteItem from './RouteItem'
 
-@DragDropContext(HTML5Backend)
 class List extends Component {
 	render() {
 		let list;
@@ -26,8 +25,6 @@ class List extends Component {
 								onDelete={removeWaypoint.bind(this, waypoint)}
 								moveWaypoint={moveWaypoint}
 								isDragging={false}
-								connectDragSource={() => {}}
-								connectDropTarget={() => {}}
 							/>
 						)
 					})
@@ -49,5 +46,4 @@ List.propTypes = {
 	moveWaypoint: PropTypes.func.isRequired
 };
 
-export default List;
-
+export default DragDropContext(HTML5Backend)(List);

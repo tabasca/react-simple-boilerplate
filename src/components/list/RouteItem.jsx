@@ -65,4 +65,9 @@ RouteItem.propTypes = {
 	isDragging: PropTypes.bool.isRequired
 };
 
+RouteItem.defaultProps = {
+	connectDragSource: () => {},
+	connectDropTarget: () => {}
+}
+
 export default RouteItem;
